@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/Bookshelf-App/static/js/runtime~main.28372b76.js"
   },
   {
-    "revision": "6cef0523ba7fbe07876c",
-    "url": "/Bookshelf-App/static/js/main.9f09fee4.chunk.js"
+    "revision": "1ac7a0b95941a9a81fd0",
+    "url": "/Bookshelf-App/static/js/main.e6e7f524.chunk.js"
   },
   {
     "revision": "3b6dbb9896f824670754",
     "url": "/Bookshelf-App/static/js/2.550ad9c3.chunk.js"
   },
   {
-    "revision": "6cef0523ba7fbe07876c",
+    "revision": "1ac7a0b95941a9a81fd0",
     "url": "/Bookshelf-App/static/css/main.bc868c98.chunk.css"
   },
   {
-    "revision": "69570637d33abc5ee4ad4be753790705",
+    "revision": "59bcf267abd553a86ac2fa15c7e8d356",
     "url": "/Bookshelf-App/index.html"
   }
 ];
