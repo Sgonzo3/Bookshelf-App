@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Bookshelf-App/precache-manifest.b6eebd58f2ab98bade4114478c6d42c7.js"
+  "/Bookshelf-App/precache-manifest.1dc4b5f2d69b2d83606d4a529f6ab109.js"
 );
 
 workbox.clientsClaim();
