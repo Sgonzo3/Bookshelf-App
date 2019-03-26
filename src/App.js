@@ -1,28 +1,42 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import * as BooksAPI from './BooksAPI'
+import './App.css'
+import MainPage from './Main.js'
+import SearchPage from './SearchPage.js'
+import { Route } from 'react-router-dom' 
 
-class App extends Component {
+class BooksApp extends React.Component {
+  state = {
+    	list: [],
+    	searchList: [],
+    	updaterList: [],
+  }
+// takes in arguments from bookshelfChanger component, sends to BooksAPI to save user changes, then updates state with list
+ shelfUpdate = (bookToChange, shelfToChangeTo) => {
+  	BooksAPI.update(bookToChange, shelfToChangeTo)
+    .then(resp => this.setState( {updaterList: resp} ) )
+    .catch(resp => console.log(resp))
+  }
+// takes input from SearchBar component, sends to BooksAPI to request list of matching books, then updates state with list
+querySearcher = (query) => {
+  	query === '' ? this.setState( {searchList: [], }) :
+	BooksAPI.search(query, 20)
+		.then(resp => 
+              //console.log(resp)
+              this.setState( {searchList: resp}) 
+             )
+  		.catch(resp => 
+               this.setState( {searchList: [], })
+              )
+}
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app">
+        <Route exact path="/" render={() => (<MainPage list={this.state.list} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} />) }/>
+    	<Route path="/Search" render={() => (<SearchPage list={this.state.list} searchList={this.state.searchList} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} querySearcher={this.querySearcher} />)}/>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default BooksApp
