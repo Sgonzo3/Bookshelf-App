@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/Bookshelf-App/static/css/main.bc868c98.chunk.css"
   },
   {
-    "revision": "273ad943193f9684a7d19f726c743ce8",
+    "revision": "69570637d33abc5ee4ad4be753790705",
     "url": "/Bookshelf-App/index.html"
   }
 ];
