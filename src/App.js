@@ -3,7 +3,7 @@ import * as BooksAPI from './BooksAPI'
 import './App.css'
 import MainPage from './Main.js'
 import SearchPage from './SearchPage.js'
-import { Route } from 'react-router-dom' 
+import { Route } from 'react-router-dom'
 
 class BooksApp extends React.Component {
   state = {
@@ -21,19 +21,19 @@ class BooksApp extends React.Component {
 querySearcher = (query) => {
   	query === '' ? this.setState( {searchList: [], }) :
 	BooksAPI.search(query, 20)
-		.then(resp => 
+		.then(resp =>
               //console.log(resp)
-              this.setState( {searchList: resp}) 
+              this.setState( {searchList: resp})
              )
-  		.catch(resp => 
+  		.catch(resp =>
                this.setState( {searchList: [], })
               )
 }
   render() {
     return (
       <div className="app">
-        <Route exact path="/" render={() => (<MainPage list={this.state.list} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} />) }/>
-    	<Route path="/Search" render={() => (<SearchPage list={this.state.list} searchList={this.state.searchList} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} querySearcher={this.querySearcher} />)}/>
+        <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (<MainPage list={this.state.list} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} />) }/>
+    	<Route path={process.env.PUBLIC_URL + '/Search'} render={() => (<SearchPage list={this.state.list} searchList={this.state.searchList} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} querySearcher={this.querySearcher} />)}/>
       </div>
     )
   }
