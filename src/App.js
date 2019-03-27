@@ -33,7 +33,7 @@ querySearcher = (query) => {
     return (
       <div className="app">
         <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (<MainPage list={this.state.list} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} />) }/>
-    	<Route path={process.env.PUBLIC_URL + '/Search'} render={() => (<SearchPage list={this.state.list} searchList={this.state.searchList} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} querySearcher={this.querySearcher} />)}/>
+    	<Route path="/Search" render={() => (<SearchPage list={this.state.list} searchList={this.state.searchList} updaterList={this.state.updaterList} shelfUpdate={this.shelfUpdate} querySearcher={this.querySearcher} />)}/>
       </div>
     )
   }
