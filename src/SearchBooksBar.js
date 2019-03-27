@@ -7,15 +7,15 @@ class SearchBooksBar extends React.Component {
   }
 //takes user input updates component state with value, then passes state to app Component method to query BooksAPI
   handleChange = (event) => {
-    this.setState({input: event.target.value}, 
+    this.setState({input: event.target.value},
                  () => this.props.querySearcher(this.state.input)
                  )
   }
-  
+
   render() {
     return (
       <div className="search-books-bar" >
-        <Link to="/" className="close-search">Close</Link>
+        <Link to={process.env.PUBLIC_URL + '/'} className="close-search">Close</Link>
         <div className="search-books-input-wrapper" >
           <input
              type="text"
