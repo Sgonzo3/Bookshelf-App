@@ -1,5 +1,5 @@
 {
-  "main.css": "/Bookshelf-App/static/css/main.bc868c98.chunk.css",
+  "main.css": "/Bookshelf-App/static/css/main.76a30f3c.chunk.css",
   "main.js": "/Bookshelf-App/static/js/main.8b1bd87a.chunk.js",
   "main.js.map": "/Bookshelf-App/static/js/main.8b1bd87a.chunk.js.map",
   "runtime~main.js": "/Bookshelf-App/static/js/runtime~main.28372b76.js",
@@ -7,8 +7,8 @@
   "static/js/2.550ad9c3.chunk.js": "/Bookshelf-App/static/js/2.550ad9c3.chunk.js",
   "static/js/2.550ad9c3.chunk.js.map": "/Bookshelf-App/static/js/2.550ad9c3.chunk.js.map",
   "index.html": "/Bookshelf-App/index.html",
-  "precache-manifest.1079dffa624ce02f3f7241a102728e92.js": "/Bookshelf-App/precache-manifest.1079dffa624ce02f3f7241a102728e92.js",
+  "precache-manifest.a882a93966ed03c66ca01009e4f296b9.js": "/Bookshelf-App/precache-manifest.a882a93966ed03c66ca01009e4f296b9.js",
   "service-worker.js": "/Bookshelf-App/service-worker.js",
-  "static/css/main.bc868c98.chunk.css.map": "/Bookshelf-App/static/css/main.bc868c98.chunk.css.map",
+  "static/css/main.76a30f3c.chunk.css.map": "/Bookshelf-App/static/css/main.76a30f3c.chunk.css.map",
   "static/media/App.css": "/Bookshelf-App/static/media/arrow-drop-down.78c6f53b.svg"
 }
