@@ -1,6 +1,14 @@
 # Bookshelf App
 - completed as pasrt of the Udacity Front End Developer Nanodegree.
 
+## Instructions
+- A preset collection of books are displayed in each of the three shelves
+- Users can click the menu button within each book to move it between shelves or remove it from their collection
+- Changes are saved to the user's cache in the browser
+- Users can use the Add button in the lower right corner to display a search bar
+- Typing into the search bar will display a list of books matching the user's query
+- Use the Menu button on each book to add to the desired shelf
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
